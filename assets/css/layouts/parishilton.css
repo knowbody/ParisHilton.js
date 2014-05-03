@@ -1,0 +1,275 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.7em;
+    color: #7f8c8d;
+    font-size: 13px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.l-box {
+    padding: 1em;
+}
+
+.l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.is-center {
+    text-align: center;
+}
+
+
+
+
+.pure-form label {
+    margin: 1em 0 0;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.pure-form input[type] {
+    border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+.pure-button {
+    background-color: #1f8dd6;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+a.pure-button-primary {
+    background: white;
+    color: #F6358A;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+.home-menu.pure-menu-open {
+    background: #2d3e50;
+}
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    border-bottom: none;
+    z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #6FBEF3;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+
+
+.hero-container {
+    background: #F6358A;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.hero {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    /*text-transform: uppercase;*/
+}
+
+.hero-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: white !important;
+    border: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+    background: transparent;
+    text-align: center;
+
+}
+input.hero-head {
+}
+*::-webkit-input-placeholder,
+*:-moz-placeholder,
+*::-moz-placeholder,
+*:-ms-input-placeholder {
+    -webkit-appearance: none;
+    outline: none;
+    color: white !important;
+}
+
+
+
+
+.hero-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+
+.content-wrapper {
+    position: absolute;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: white;
+}
+
+
+.content-head {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+}
+
+.content-head-ribbon {
+    color: white;
+}
+
+
+.content-subhead {
+    color: #1f8dd6;
+}
+    .content-subhead i {
+        margin-right: 7px;
+    }
+
+
+.ribbon {
+    background: #2d3e50;
+    color: #aaa;
+}
+
+
+.footer {
+    background: #111;
+}
+
+
+.song-info .pure-button {
+ margin-bottom: 10px;
+}
+
+.button-spotify {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+
+
+body.positive .hero-container {
+    background-color: #5eb95e; !important;
+}
+
+body.negative .hero-container {
+    background-color: #dd514c !important;
+}
+
+body.neutral .hero-container {
+    background-color: #cbcbcb !important;
+}
+
+
+
+
+
+
+
+@media (min-width: 48em) {
+
+
+    body {
+        font-size: 16px;
+    }
+    .content {
+        padding: 1em;
+    }
+
+    .home-menu {
+        text-align: left;
+    }
+        .home-menu ul {
+            float: right;
+        }
+
+
+    .splash {
+        width: 50%;
+        height: 50%;
+    }
+
+    .hero-head {
+        font-size: 250%;
+    }
+
+
+
+    .l-box-lrg {
+        border: none;
+    }
+
+}
+
+
+@media (min-width: 78em) {
+    .hero-head {
+        font-size: 300%;
+    }
+}
