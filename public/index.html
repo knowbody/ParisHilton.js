@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="ParisHilton.js - removes everything between the <head></head> tags">
 
     <title>ParisHilton.js</title>
 
@@ -27,19 +27,23 @@
 
 </head>
 <body>
-    <div class="hero-container">
-        <div class="hero">
-            <h1 type="text" class="hero-head" name="url" contenteditable>
-                Enter URL to apply ParisHilton.js effect
-            </h1>
-            <p>
-                <a href="#" id="check" class="pure-button pure-button-primary">APPLY</a>
-            </p>
+    <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/knowbody/ParisHilton.js">Fork me on GitHub</a>
         </div>
     </div>
-
+    <div class="hero-container">
+        <div class="hero">
+            <h1>Enter URL to apply ParisHilton.js effect</h1>
+            <form method="POST" action="/">
+                <input type="text" id="url" name="url" class="hero-head" contenteditable></input>
+                <p>
+                    <input type="submit" value="APPLY" class="pure-button pure-button-primary"></input>
+                </p>
+            </form>
+        </div>
+    </div>
     <script src="assets/js/vnd/jquery-2.1.0.min.js"></script>
     <script src="assets/js/app.js"></script>
-
 </body>
 </html>

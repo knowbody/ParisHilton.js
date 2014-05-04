@@ -1,29 +1,29 @@
 var express = require('express'),
     app = express(),
+    bodyParser = require('body-parser'),
     cheerio = require('cheerio'),
     request = require('request');
 
-var port = process.env.port || 8000;
+app.use(bodyParser());
+var port = process.env.port || 3000;
 
-app.get('/', function (req, res) {
+app.use(express.static(__dirname + '/public'));
 
-    var url = 'http://www.google.com';
+app.post('/', function (req, res) {
+    var url = req.body.url;
 
-    request(url, function (err, resp, html) {
+    // magic happens here
+    request(req.body.url, function (err, resp, html) {
         if (err) {
-            throw err;
+            res.redirect('/');
         }
         var $ = cheerio.load(html);
         $('head').remove();
         res.send($.html());
     });
+
 });
 
-app.listen(port);
-console.log('no head on port: ' + port);
-
-exports = module.exports = app;
-
-
-
-
+app.listen(port, function (){
+    console.log('<Headless> on port: ' + port);
+});
